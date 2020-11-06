@@ -1,4 +1,4 @@
-# Using a Convolutional Neural Network To Detect Pneumonia Using X-Ray Images
+# Using a Convolutional Neural Network To Detect Pneumonia In X-Ray Images
 
 **Author**: Vivienne DiFrancesco
 
