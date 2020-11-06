@@ -53,6 +53,7 @@ The best model had an accuracy score of 94%.
 - Testing different layer types or adjusting the parameters of layers. Many of the parameters in layers in this project were left as default because there was not time to dive deeper. For example testing for stride in the convolutional layers.
 - Continuing to try different parameter combinations, optimizers, loss functions, etc.
 - Using Google Colab to take advantage of GPU capabilities to be able to run models faster.
+- Adding more images to the dataset and possibly adding adult X-rays.
 
 
 ## For further information
