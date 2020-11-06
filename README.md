@@ -35,15 +35,12 @@ The best model had an accuracy score of 94%.
 
 ## Recommendations:
 
-1. <b>Use a shallower model.</b> Having shallower and simpler models actually improved performance. In this notebook an extra layers model is shown, but other extra layer models were run to try to see if slightly different structures could improve performance. None of them were better than the more basic, shallow structure as was used in the final best model. The more complex models took significantly longer to train and had accuracy several points lower than the base model. Over-fitting was also a problem and methods including dropout layers and batch normalization layers would fix that problem but the model would still have much worse accuracy.  
-
-
-2. <b>Use ReLU as the activation function for the layers.</b> ELU sometimes had comparable performance to ReLU but sometimes was much worse. Overall ELU is unreliable for this task. However, ELU trains much faster in less epochs than ReLU so it could potentially still be useful for testing some scenarios of parameters against each other and be able to churn out the models faster. Then the best parameters that were tested best could be applied to a model that uses a ReLU. This would save time in modeling multiple possibilities. 
-
-
+1. <b>Use a shallower model.</b> Having shallower and simpler models actually improved performance. In this notebook an extra layers model is shown, but other extra layer models were run to try to see if slightly different structures could improve performance. None of them were better than the more basic, shallow structure as was used in the final best model. The more complex models took significantly longer to train and had accuracy several points lower than the base model. Over-fitting was also a problem and methods including dropout layers and batch normalization layers would fix that problem but the model would still have much worse accuracy.
+<br/>
+ 2. <b>Use ReLU as the activation function for the layers.</b> ELU sometimes had comparable performance to ReLU but sometimes was much worse. Overall ELU is unreliable for this task. However, ELU trains much faster in less epochs than ReLU so it could potentially still be useful for testing some scenarios of parameters against each other and be able to churn out the models faster. Then the best parameters that were tested best could be applied to a model that uses a ReLU. This would save time in modeling multiple possibilities.   
+<br/>
 3. <b>Oversample the data to correct class imbalance.</b> The oversampled data improved the ability of the models to more evenly predict the classes and improved overall accuracy as well. Passing in the class weights when fitting the models does a decent job of evening out the predictive ability of the model for both classes in most cases, but accuracy gains can be found from oversampling the less common class to create more balance. Data augmentation is a good way to keep high variability in oversampled data. Adding extra images does increase training time, however.
-
-
+<br/>
 4. <b>Use image size to your advantage.</b> The models using smaller images proved that good accuracy could still be found in a model that had smaller image sizes as there wasn't much too much loss in accuracy. Smaller image sizes can run models faster especially if the dataset is very large. However, if these image classifications are going to be heavily used for making decisions about health, then use larger images because every bit more accurate the model can be is extremely important. 
 
 
@@ -62,7 +59,7 @@ Please review the narrative of the analysis in [the main notebook](./main_notebo
 
 ## Repository Structure:
 
-- README.md: The top level README for reviewers of this project
-- main_notebook.ipynb: narritive documentation of analysis in jupyter notebook
-- UsingComputerVisionToDiagnosePneumonia.pdf: pdf version of project presentation slides
-- Images folder: Contains main visuals for the project
+- <b>README.md:</b> The top level README for reviewers of this project
+- <b>main_notebook.ipynb:</b> narritive documentation of analysis in jupyter notebook
+- <b>UsingComputerVisionToDiagnosePneumonia.pdf:</b> PDF version of project presentation slides
+- <b>Images folder:</b> Contains main visuals for the project
