@@ -10,7 +10,7 @@ The contents of this repository detail an analysis of a convolutional neural net
 - <b>main_notebook.ipynb:</b> narritive documentation of analysis in jupyter notebook
 - <b>UsingComputerVisionToDiagnosePneumonia.pdf:</b> PDF version of project presentation slides
 
-![MainImage]( )
+![MainImage](https://raw.githubusercontent.com/HeyThatsViv/Diagnosing-Pneumonia/master/Images/MainImage.jpg)
 
 
 ## Business problem
