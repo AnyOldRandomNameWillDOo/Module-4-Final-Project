@@ -4,8 +4,16 @@
 
 The contents of this repository detail an analysis of a convolutional neural network to predict if X-rays show patients with pneumonia or not. This analysis is detailed in hopes of making the work accessible and replicable.
 
+## Repository Structure
 
-## Business problem:
+- <b>README.md:</b> The top level README for reviewers of this project
+- <b>main_notebook.ipynb:</b> narritive documentation of analysis in jupyter notebook
+- <b>UsingComputerVisionToDiagnosePneumonia.pdf:</b> PDF version of project presentation slides
+
+![MainImage]( )
+
+
+## Business problem
 
 The purpose of this project is to use a Convolutional Neural Network (CNN) to predict disease status of children's chest X-rays. The prediction is set up as a binary problem with the classes being normal or pneumonia. The hope is that by being able to predict pneumonia or normal using a neural network, it would assist physicians in being able to make more accurate and swift diagnoses to ultimately improve patient outcomes.
 
@@ -33,7 +41,7 @@ The best model had an accuracy score of 94%.
 ![ConfusionMatrix](https://raw.githubusercontent.com/AnyOldRandomNameWillDOo/Module-4-Final-Project1/master/Images/Best%20Overall%20Model%20Confusion%20Matrix.png)
 
 
-## Recommendations:
+## Recommendations
 
 <b>Use a shallower model.</b> Having shallower and simpler models actually improved performance. In this notebook an extra layers model is shown, but other extra layer models were run to try to see if slightly different structures could improve performance. None of them were better than the more basic, shallow structure as was used in the final best model. The more complex models took significantly longer to train and had accuracy several points lower than the base model. Over-fitting was also a problem and methods including dropout layers and batch normalization layers would fix that problem but the model would still have much worse accuracy.
 
@@ -56,14 +64,3 @@ The best model had an accuracy score of 94%.
 - Using Google Colab to take advantage of GPU capabilities to be able to run models faster.
 - Adding more images to the dataset and possibly adding adult X-rays.
 
-
-## For further information
-Please review the narrative of the analysis in [the main notebook](./main_notebook.ipynb) or review the [presentation slides](./UsingComputerVisionToDiagnosePneumonia.pdf).
-
-
-## Repository Structure:
-
-- <b>README.md:</b> The top level README for reviewers of this project
-- <b>main_notebook.ipynb:</b> narritive documentation of analysis in jupyter notebook
-- <b>UsingComputerVisionToDiagnosePneumonia.pdf:</b> PDF version of project presentation slides
-- <b>Images folder:</b> Contains main visuals for the project
